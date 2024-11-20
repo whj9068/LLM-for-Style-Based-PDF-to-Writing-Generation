@@ -20,3 +20,12 @@ pip install -r requirements.txt
 ```
 python context.py
 ```
+
+### Opensource Datasets for style transfer training
+
+1. modern-to-shakesperean-translation: https://huggingface.co/datasets/harpreetsahota/modern-to-shakesperean-translation
+```
+ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
+```
+
+3. 
