@@ -27,7 +27,7 @@ python context.py
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
-2. [novel-text-style-transfer](https://huggingface.co/datasets/jdpressman/retro-text-style-transfer-v0.1)
+2. [book-text-style-transfer](https://huggingface.co/datasets/jdpressman/retro-text-style-transfer-v0.1)
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
