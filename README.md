@@ -31,7 +31,7 @@ ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
-3. https://huggingface.co/datasets/Mehaki/formal_casual
+3. [formal-casual](https://huggingface.co/datasets/Mehaki/formal_casual)
 ```
 ds = load_dataset("Mehaki/formal_casual")
 ```
