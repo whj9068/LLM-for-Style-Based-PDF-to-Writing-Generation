@@ -1,0 +1,49 @@
+#shakespearean to normal
+FastLanguageModel.for_inference(model)  # Enable faster inference
+
+messages = [
+    {
+        "from": "human",
+        "value": (
+            "STYLE TRANSFER TASK:\n\n"
+            "IMPORTANT RULES:\n"
+            "1. Maintain the EXACT same length and structure as the original context.\n"
+            "2. Keep all original names, events, and facts.\n"
+            "3. Only change the writing style, not the content amount.\n"
+            "4. Match these style elements from the style text:\n"
+            "   - Vocabulary choice\n"
+            "   - Modern tone\n"
+            "   - Sentence structure\n\n"
+            "Original length guide: The output should be approximately the same number of sentences as the input context.\n\n"
+            "CONTEXT TEXT (to rewrite):\n    The quality of mercy is not strain’d,\n"
+            "    It droppeth as the gentle rain from heaven\n"
+            "    Upon the place beneath: it is twice blest;\n"
+            "    It blesseth him that gives and him that takes:\n\n"
+            "STYLE TEXT (ONLY FOR STYLE REFERENCE):\n"
+            "Mercy isn’t something you can force. It’s as effortless as rain falling from the sky, blessing both the giver and the receiver.\n"
+            "Acts of kindness benefit everyone involved, spreading positivity and gratitude to both parties.\n"
+            "Compassion is a natural quality, and showing it enhances the lives of both the giver and the recipient.\n"
+            "True kindness is not about obligation but about bringing joy and peace to others.\n"
+            "Offering help and understanding creates a ripple effect of goodwill and connection.\n"
+            "Being considerate is as natural as breathing; it makes life better for everyone.\n"
+            "Empathy and care are qualities that enrich relationships and strengthen bonds.\n"
+            "A gentle touch of kindness can uplift spirits and foster mutual respect.\n"
+            "Helping others not only lightens their burden but also brings inner peace to the helper.\n"
+            "Compassion is like sunshine: it warms the heart of both the giver and the receiver.\n\n"
+            "TASK: Rewrite the context text in the style provided, keeping the same length and content, but adopting the modern tone and vocabulary of the style text.\n\n"
+            "YOUR CONCISE STYLE-TRANSFERRED TEXT:\n"
+            "<START>\n"
+        )
+    }
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,  # Must add for generation
+    return_tensors="pt",
+).to("cuda")
+
+from transformers import TextStreamer
+text_streamer = TextStreamer(tokenizer, skip_prompt=True)
+_ = model.generate(input_ids=inputs, streamer=text_streamer, max_new_tokens=128, use_cache=True)

@@ -1,0 +1,42 @@
+#casual to formal
+FastLanguageModel.for_inference(model)  # Enable faster inference
+
+messages = [
+    {
+        "from": "human",
+        "value": (
+            "STYLE TRANSFER TASK:\n\n"
+            "IMPORTANT RULES:\n"
+            "1. Maintain the EXACT same length and structure as the original context.\n"
+            "2. Keep all original names, events, and facts.\n"
+            "3. Only change the writing style, not the content amount.\n"
+            "4. Match these style elements from the style text:\n"
+            "   - Vocabulary choice\n"
+            "   - Formal tone\n"
+            "   - Sentence structure\n\n"
+            "Original length guide: The output should be approximately the same number of sentences as the input context.\n\n"
+            "CONTEXT TEXT (to rewrite):\n"
+            "Wow, renewable energy is such a game-changer! Solar panels, wind turbines, and other cool tech are making it easier than ever to save the planet. Let’s embrace this awesome shift and keep the earth happy and healthy!\n\n"
+            "STYLE TEXT (ONLY FOR STYLE REFERENCE):\n"
+            "The integration of renewable energy systems is vital for mitigating the detrimental impacts of climate change.\n"
+            "Technological advancements in sustainability promote ecological preservation and foster environmental resilience.\n"
+            "The transition toward clean energy signifies a pivotal step in safeguarding the planet for future generations.\n"
+            "Adopting renewable energy sources represents a commitment to reducing greenhouse gas emissions and achieving global environmental stability.\n"
+            "The pursuit of sustainable energy solutions is imperative to ensuring long-term ecological harmony and economic growth.\n\n"
+            "TASK: Rewrite the context text in the style provided, keeping the same length and content, but adopting the formal tone and vocabulary of the style text.\n\n"
+            "YOUR CONCISE STYLE-TRANSFERRED TEXT:\n"
+            "<START>\n"
+        )
+    }
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,  # Must add for generation
+    return_tensors="pt",
+).to("cuda")
+
+from transformers import TextStreamer
+text_streamer = TextStreamer(tokenizer, skip_prompt=True)
+_ = model.generate(input_ids=inputs, streamer=text_streamer, max_new_tokens=128, use_cache=True)

@@ -1,0 +1,42 @@
+#formal to casual
+FastLanguageModel.for_inference(model)  # Enable faster inference
+
+messages = [
+{
+    "from": "human",
+    "value": (
+        "STYLE TRANSFER TASK:\n\n"
+        "IMPORTANT RULES:\n"
+        "1. Maintain the EXACT same length and structure as the original context.\n"
+        "2. Keep all original names, events, and facts.\n"
+        "3. Only change the writing style, not the content amount.\n"
+        "4. Match these style elements from the style text:\n"
+        "   - Vocabulary choice\n"
+        "   - Dramatic tone\n"
+        "   - Sentence structure\n\n"
+        "Original length guide: The output should be approximately the same number of sentences as the input context.\n\n"
+        "CONTEXT TEXT (to rewrite):\n    The integration of renewable energy solutions represents a pivotal strategy in mitigating the adverse effects of climate change.  \n\n"
+        "STYLE TEXT (ONLY FOR STYLE REFERENCE):\n "
+        "Hey there, eco-warriors! Let’s dive into the world of solar panels, wind turbines, and saving the planet in style. Green energy isn’t just cool—it’s the superhero we need right now. Let’s charge up and power the future!\n"
+        "Calling all techies! Guess what? Renewable energy gadgets are revolutionizing the world. From smart solar grids to sleek wind turbines, it’s tech-savvy and planet-friendly.\n"
+        "Get ready to be amazed! Clean energy is here, and it’s epic. Think sunny panels, breezy turbines, and innovation that keeps the planet spinning.\n"
+        "Lights out? No problem! Sustainable power sources have your back. Let’s make the world brighter, one green watt at a time.\n"
+        "Ready to join the energy revolution? It’s simple, fun, and game-changing. From rooftop solar to personal wind turbines, you’ve got this!\n\n"
+        "TASK: Rewrite the context text in the style provided, keeping the same length and content, but adopting the dramatic tone and vocabulary of the style text.\n\n"
+        "YOUR CONCISE STYLE-TRANSFERRED TEXT:\n"
+        "<START>\n"
+    )
+}
+
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,  # Must add for generation
+    return_tensors="pt",
+).to("cuda")
+
+from transformers import TextStreamer
+text_streamer = TextStreamer(tokenizer, skip_prompt=True)
+_ = model.generate(input_ids=inputs, streamer=text_streamer, max_new_tokens=128, use_cache=True)

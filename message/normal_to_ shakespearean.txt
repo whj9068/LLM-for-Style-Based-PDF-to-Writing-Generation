@@ -1,0 +1,63 @@
+#normal to shakespearean
+FastLanguageModel.for_inference(model) # 
+
+messages = [
+    {
+
+            "from": "human",
+            "value": (
+                "STYLE TRANSFER TASK:\n\n"
+                "IMPORTANT RULES:\n"
+                "1. Maintain the EXACT same length and structure as the original context.\n"
+                "2. Keep all original names, events, and facts.\n"
+                "3. Only change the writing style, not the content amount.\n"
+                "4. Match these style elements from the style text:\n"
+                "   - Vocabulary choice\n"
+                "   - Dramatic tone\n"
+                "   - Sentence structure\n\n"
+                "Original length guide: The output should be approximately the same number of sentences as the input context.\n\n"
+                "CONTEXT TEXT (to rewrite):\n    Thank you, dear Egeus. What’s going on with you?    \n\n"
+                "STYLE TEXT (ONLY FOR STYLE REFERENCE):\n"
+                "The quality of mercy is not strain’d,\n"
+                "It droppeth as the gentle rain from heaven\n"
+                "Upon the place beneath: it is twice blest;\n"
+                "It blesseth him that gives and him that takes:\n"
+                "’Tis mightiest in the mightiest: it becomes\n"
+                "The throned monarch better than his crown;\n"
+                "His sceptre shows the force of temporal power,\n"
+                "The attribute to awe and majesty,\n"
+                "Wherein doth sit the dread and fear of kings;\n"
+                "But mercy is above this sceptred sway;\n"
+                "It is enthroned in the hearts of kings,\n"
+                "It is an attribute to God himself;\n"
+                "And earthly power doth then show likest God’s\n"
+                "When mercy seasons justice.\n"
+                "Therefore, Jew,\n"
+                "Though justice be thy plea, consider this,\n"
+                "That, in the course of justice, none of us\n"
+                "Should see salvation: we do pray for mercy;\n"
+                "And that same prayer doth teach us all to render\n"
+                "The deeds of mercy.\n"
+                "I have spoke thus much\n"
+                "To mitigate the justice of thy plea;\n"
+                "Which if thou follow, this strict court of Venice\n"
+                "Must needs give sentence ‘gainst the merchant there."
+                "TASK: Rewrite the context text in the style provided, keeping the same length and content, but adopting the dramatic tone and vocabulary of the style text.\n\n"
+                "YOUR CONCISE STYLE-TRANSFERRED TEXT:\n"
+                "<START>\n"
+            )
+    }
+]
+
+
+
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize = True,
+    add_generation_prompt = True, # Must add for generation
+    return_tensors = "pt",
+).to("cuda")
+
+from transformers import TextStreamer
+text_streamer = TextStreamer(tokenizer, skip_prompt = True)
+_ = model.generate(input_ids = inputs, streamer = text_streamer, max_new_tokens = 128, use_cache = True)
