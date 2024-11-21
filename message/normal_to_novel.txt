@@ -1,0 +1,36 @@
+#casual to formal
+FastLanguageModel.for_inference(model)  # Enable faster inference
+
+messages = [
+    {
+        "from": "human",
+        "value": (
+            "STYLE TRANSFER TASK:\n\n"
+            "IMPORTANT RULES:\n"
+            "1. Maintain the EXACT same length and structure as the original context.\n"
+            "2. Keep all original names, events, and facts.\n"
+            "3. Only change the writing style, not the content amount.\n"
+            "4. Match these style elements from the style text:\n"
+            "   - Vocabulary choice\n"
+            "   - Formal tone\n"
+            "   - Sentence structure\n\n"
+            "Original length guide: The output should be approximately the same number of sentences as the input context.\n\n"
+            "CONTEXT TEXT (to rewrite):\n"
+            "Um, so let me tell ya about Moosehead Lake, right? It's the biggest and wildest one in New England, okay? It's in the middle of the State of Maine, about a hundred and fifty miles from the ocean. Its length is fifty miles, and its width ranges from five to fifteen. It's surrounded by mountains, the tallest one called Katahden. The whole area, including the mountains, is covered in a dense forest, mostly made up of pines. It's the only wilderness region in New England, where wild animals roam free, ya know? But during the summer, it's all peaceful and quiet, unless some scenery-lovin' traveler like me comes by in his birch canoe. But in the winter, it's a whole different story. That's when you hear the sound of axes all over the place, 'cause a thousand loggers are workin' there."
+            "STYLE TEXT (ONLY FOR STYLE REFERENCE):\n"
+            "For one long, long hour did they thus hang, “midway betwixt life and death,” exposed to the danger of being washed away by the remorseless surge, or swallowed up, as we were afterwards told, by a couple of sharks, which were kept away only by the hand of Providence. This incident tended to cool our ardor for fishing, and as we were satisfied with that day’s luck, we put up our gear, during which time the boat arrived, and we embarked for the Hill. We made one short turn, however, towards the boat which had picked up the fishermen, as we were anxious to tell them why we did not come to their relief. We then tacked about, and the last words we heard from our companions were,—“Thank you—thank you—God bless you all,” and until we had passed a league beyond Fisher Island, our little vessel “carried a most beautiful bone between her teeth.” At sunset we moored our little boat on the eastern shore of Paucatuck Bay. On ascending to the Watch Hill hotel, we found it to be a large, well-furnished house, and our host to be a fat and jolly Falstaff-ish sort of man, just suited to his station. At seven o’clock we sat down to a first-rate blackfish supper, then smoked a cigar, and while my companions resorted to the ten-pin alley, I buttoned up my pea-jacket, and sallied forth on an “exploring expedition.” As I stood on the highest point of the peninsula facing, the south, I found that the light-house stood directly before me, on the extreme point, that a smooth beach faded away on either side, the left hand one being washed by the Atlantic, and that on the right by the waters of Fisher Island Bay, and that the dreary hills in my rear were dotted by an occasional dwelling. The breeze had died away, and the bright, full moon was in the cloudless sky. Many sails were in the offing, passing by and being passed by the Providence and Stonington steamboats bound to New York. The scenery around me, and the loveliness of the day, with its galaxy of stars above me, caused me to forget myself, and I wandered far away upon the shore—alone, in the awful presence of the great Atlantic Ocean. No sounds fell upon my ear, save the muffled roar of the ground swell, and the faint whispers of the tiny waves as they melted upon the sand. I traced my name, and beside it that of another, a being beauteous, for whose cabinet of curiosities I gathered many a round, smooth pebble, and many a delicate sea-shell. I wandered on, now gazing with wonder and admiration into the cerulean vault of Heaven, or into the still deeper blue of the mighty sea; and now singing with a loud voice one of the sacred songs of the sweet singer of Israel. Now, a thousand images of surpassing loveliness darted across my vision, as I thought of God—of an eternal life in heaven—and of love, divine and human; and then there came a weight upon my spirit, as I remembered the powers of darkness, the destiny of the condemned, and the miseries engendered by our evil passions. One moment I deemed myself immortal, released forever from the contaminating influence of sin, and then I thought of the valley of death, and trembled. In that communion with the mysteries of the universe, strongly blended as they were, I felt that I could wander on without fatigue, until the whole earth should be trodden by my pilgrim feet. But the chilly air and the fading night warned me to retrace my steps, and in an hour I had reached my home. When the sun rose from his ocean-bed on the following morning, surrounded by a magnificent array of clouds, I was up, and busily engaged preparing for a day’s fishing,—first, and before breakfast, for bluefish, then for blackfish, and then for bass. While my companions were asleep, I went out with an old fisherman, and by breakfast time had captured thirty bluefish, weighing about two pounds apiece."
+            "<START>\n"
+        )
+    }
+]
+
+inputs = tokenizer.apply_chat_template(
+    messages,
+    tokenize=True,
+    add_generation_prompt=True,  # Must add for generation
+    return_tensors="pt",
+).to("cuda")
+
+from transformers import TextStreamer
+text_streamer = TextStreamer(tokenizer, skip_prompt=True)
+_ = model.generate(input_ids=inputs, streamer=text_streamer, max_new_tokens=128, use_cache=True)
