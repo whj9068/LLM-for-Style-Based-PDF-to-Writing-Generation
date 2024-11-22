@@ -39,3 +39,7 @@ ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
 ds = load_dataset("Mehaki/formal_casual")
 ```
+5. [Poetry-Modern_Resaissance](https://huggingface.co/datasets/merve/poetry)
+```
+ds = load_dataset("merve/poetry")
+```
