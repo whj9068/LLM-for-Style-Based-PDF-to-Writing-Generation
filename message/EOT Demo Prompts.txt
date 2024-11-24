@@ -1,15 +1,5 @@
 EOT Demo Prompts
 --Template
-You are an expert in analyzing and adapting writing styles.
-
-Your process for style transfer:
-1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
-2. Consider provided style descriptions as supplementary guidance
-3. Combine analyses to identify key style elements
-4. Transform the text while preserving core meaning and applying style patterns
-
-Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
-
 Context text to be transformed:
 Today I realized I had a crush on Jorden and his older brother, Kaylen.
 
@@ -26,52 +16,7 @@ Example 5:
 
 Provided style characteristics (consider as supplementary):
 
-
-
---Modern to Shakespearean
-You are an expert in analyzing and adapting writing styles.
-
-Your process for style transfer:
-1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
-2. Consider provided style descriptions as supplementary guidance
-3. Combine analyses to identify key style elements
-4. Transform the text while preserving core meaning and applying style patterns
-
-Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
-
-Context text to be transformed:
-I'm going to make you a rich man .
-
-Sample writing with desired writing style:
-Example 1:
-He's friends with Caesar , In state of health , thou say'st , and , thou say'st , free .
-Example 2:
-He's bound to Octavia .
-Example 3:
-For what good turn ?
-Example 4:
-For the best turn i' th' bed .
-Example 5:
-Let him not leave out The color of her hair .
-
-Provided style characteristics (consider as supplementary):
-"Word_Length": "The text uses a mix of word lengths, with a notable balance between shorter words (one or two syllables) and longer, multi-syllabic words. This variation contributes to both readability and a sophisticated tone.",
-"Syllabic_Word": "The text favors a blend of monosyllabic words for structural clarity and multi-syllabic words to convey technical depth and nuance. Polysyllabic terms enhance the formal tone and emphasize the complexity of ideas.",
-"Emotion": "The emotional tone of the text is nuanced and dynamic, often exploring a range of emotions from positive admiration to negative despair. This balance creates a depth of emotional engagement while maintaining a formal and reflective perspective.",
-"Rhetoric": "The text employs a variety of rhetorical devices, including figurative language, idioms, metaphors, and hyperbole. These techniques enrich the language, highlight emotional resonance, and add dramatic or humorous effects. The sentence structure integrates periodic sentences for dramatic buildup and looser sentences for spontaneity, ensuring an engaging and persuasive flow."
-
-
 --Shakespearean to Modern
-You are an expert in analyzing and adapting writing styles.
-
-Your process for style transfer:
-1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
-2. Consider provided style descriptions as supplementary guidance
-3. Combine analyses to identify key style elements
-4. Transform the text while preserving core meaning and applying style patterns
-
-Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
-
 Context text to be transformed:
 Thou didst absolutely shine at the exhibition of talents!
 
@@ -94,17 +39,98 @@ Provided style characteristics (consider as supplementary):
 "Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
 
 
+--Modern Poetry to Modern
+Context text to be transformed:
+Only the wanderer Knows England's graces, Or can anew see clear Familiar faces. And who loves joy as he That dwells in shadows? Do not forget me quite, O Severn meadows.
+
+Sample writing with desired writing style:
+Example 1:
+I don't make fortunes ; I only see them .
+Example 2:
+Well , I can not tell how my difficult life has weathered my face , but I will never let those difficulties subdue my courage .
+Example 3:
+If our eyes were policemen , they might capture two thieves at once while we're embracing .
+Example 4:
+If I were to make a prediction regarding this union , I wouldn't say that .
+Example 5:
+This is how they do it , sir : they measure the depth of the Nile , according to certain marks made on the walls of the Pyramid .
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses predominantly shorter words (one or two syllables) to maintain simplicity and accessibility, with occasional longer words to add depth and variation.",
+"Syllabic_Word": "The text balances monosyllabic words for clarity and simplicity with polysyllabic words to evoke deeper meaning and emotional resonance, enhancing the relatable tone.",
+"Emotion": "The emotional tone of the text is warm and uplifting, focusing on positive emotions like joy, peace, and gratitude, while fostering a sense of connection and empathy.",
+"Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
+
+--Renaissance Poetry to Modern
+Context text to be transformed:
+O, call not me to justify the wrong That thy unkindness lays upon my heart
+
+Sample writing with desired writing style:
+Example 1:
+I don't make fortunes ; I only see them .
+Example 2:
+Well , I can not tell how my difficult life has weathered my face , but I will never let those difficulties subdue my courage .
+Example 3:
+If our eyes were policemen , they might capture two thieves at once while we're embracing .
+Example 4:
+If I were to make a prediction regarding this union , I wouldn't say that .
+Example 5:
+This is how they do it , sir : they measure the depth of the Nile , according to certain marks made on the walls of the Pyramid .
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses predominantly shorter words (one or two syllables) to maintain simplicity and accessibility, with occasional longer words to add depth and variation.",
+"Syllabic_Word": "The text balances monosyllabic words for clarity and simplicity with polysyllabic words to evoke deeper meaning and emotional resonance, enhancing the relatable tone.",
+"Emotion": "The emotional tone of the text is warm and uplifting, focusing on positive emotions like joy, peace, and gratitude, while fostering a sense of connection and empathy.",
+"Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
+
+
+--formal to casual
+Context text to be transformed:
+The Impact of Artificial Intelligence in Education Artificial Intelligence (AI) is revolutionizing education through personalized learning, adaptive assessments, and data-driven insights. AI-powered educational tools are transforming the way students learn and educators teach.
+
+Sample writing with desired writing style:
+Example 1:
+Your Guide to Green Urban Living Hey urban enthusiasts! It's time to embrace sustainability and create greener, smarter cities. We're all about eco-friendly neighborhoods, energy-saving innovations, and making urban living an exciting and eco-conscious journey. Join the green urban living party!
+Example 2:
+Hey finance aficionados! Let's dive into the world of AI-powered finance and smart investments. We're all about digital wallets, budgeting made easy, and making finance a tech-savvy adventure. Join the FinTech fun party!
+Example 3:
+It's time to navigate the digital world with confidence. We're all about secure passwords, vigilant clicks, and making cybersecurity a fun digital adventure. Join the cyber defense party!
+Example 4:
+Let's dive into the world of AI-enhanced education and experience learning like never before. We're all about interactive lessons, smart study buddies, and making education a tech-savvy adventure. Join the digital education party!
+Example 5:
+Your Guide to Greener Urban Living Hey city dwellers! Let's embark on a journey toward greener urban living. We're all about eco-friendly neighborhoods, bike-friendly streets, and making cities a sustainable adventure. Join the urban sustainability party!
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses predominantly short, easy-to-understand words, keeping the tone light, approachable, and conversational, with occasional longer words for emphasis or variety.",
+"Syllabic_Word": "The text relies heavily on monosyllabic and disyllabic words to maintain simplicity and flow, with some polysyllabic words adding a touch of playfulness and charm.",
+"Emotion": "The emotional tone of the text is upbeat, friendly, and encouraging, designed to engage and motivate the reader while conveying a sense of ease and confidence.",
+"Rhetoric": "The text uses conversational language, rhetorical questions, and informal phrases like 'Hey there' and 'kick back' to create a relaxed and inclusive vibe. It avoids overly formal structures, opting instead for snappy, engaging sentences with a touch of humor and positivity."
+
+
+--casual to formal
+Context text to be transformed:
+Wow, we are so glad to have this amazing technology!
+
+Sample writing with desired writing style:
+Example 1:
+Eco-friendly accommodations, responsible travel practices, and community engagement efforts ensure that future generations can enjoy the world's stunning landscapes and cultural treasures.
+Example 2:
+With advancements in battery technology and charging infrastructure, EVs are poised to become the cornerstone of eco-friendly commuting.
+Example 3:
+The Influence of Social Media on Modern Politics Social media platforms have a significant influence on modern politics. 
+Example 4:
+Technologies such as carbon capture, sustainable agriculture practices, and renewable energy sources are crucial in reducing greenhouse gas emissions and preserving our planet's future.
+Example 5:
+The Role of Artificial Intelligence in Healthcare Artificial Intelligence (AI) is revolutionizing the healthcare sector through improved diagnostics, predictive analytics, and personalized patient care. 
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses predominantly short, easy-to-understand words, keeping the tone light, approachable, and conversational, with occasional longer words for emphasis or variety.",
+"Syllabic_Word": "The text relies heavily on monosyllabic and disyllabic words to maintain simplicity and flow, with some polysyllabic words adding a touch of playfulness and charm.",
+"Emotion": "The emotional tone of the text is upbeat, friendly, and encouraging, designed to engage and motivate the reader while conveying a sense of ease and confidence.",
+"Rhetoric": "The text uses conversational language, rhetorical questions, and informal phrases like 'Hey there' and 'kick back' to create a relaxed and inclusive vibe. It avoids overly formal structures, opting instead for snappy, engaging sentences with a touch of humor and positivity."
+
+
 --Modern to Modern Poetry
-You are an expert in analyzing and adapting writing styles.
-
-Your process for style transfer:
-1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
-2. Consider provided style descriptions as supplementary guidance
-3. Combine analyses to identify key style elements
-4. Transform the text while preserving core meaning and applying style patterns
-
-Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
-
 Context text to be transformed:
 When I woke up this morning, I feel like I am as free as a bird.
 
@@ -128,18 +154,8 @@ Provided style characteristics (consider as supplementary):
 
 
 --Modern to Renaissance Poetry
-You are an expert in analyzing and adapting writing styles.
-
-Your process for style transfer:
-1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
-2. Consider provided style descriptions as supplementary guidance
-3. Combine analyses to identify key style elements
-4. Transform the text while preserving core meaning and applying style patterns
-
-Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
-
 Context text to be transformed:
-
+Today I realized I had a crush on Jorden and his older brother, Kaylen.
 
 Sample writing with desired writing style:
 Example 1:
