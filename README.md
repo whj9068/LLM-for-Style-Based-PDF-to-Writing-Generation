@@ -27,11 +27,19 @@ python context.py
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
-2. [book-text-style-transfer](https://huggingface.co/datasets/jdpressman/retro-text-style-transfer-v0.1)
+2. [English-to-shakespeare-parallel](https://huggingface.co/datasets/ayaan04/english-to-shakespeare)
+```
+ds = load_dataset("ayaan04/english-to-shakespeare")
+```
+3. [book-text-style-transfer](https://huggingface.co/datasets/jdpressman/retro-text-style-transfer-v0.1)
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
-3. https://huggingface.co/datasets/Mehaki/formal_casual
+4. [formal-casual](https://huggingface.co/datasets/Mehaki/formal_casual)
 ```
 ds = load_dataset("Mehaki/formal_casual")
+```
+5. [Poetry-Modern_Resaissance](https://huggingface.co/datasets/merve/poetry)
+```
+ds = load_dataset("merve/poetry")
 ```
