@@ -23,7 +23,7 @@ python context.py
 
 ### Opensource Datasets for style transfer training
 
-1. [modern-to-shakesperean-translation](https://huggingface.co/datasets/harpreetsahota/modern-to-shakesperean-translation)
+1. [modern-to-shakesperean-translation](https://huggingface.co/datasets/harpreetsahota/modern-to-shakesperean-translation) - Trained
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
@@ -35,11 +35,11 @@ ds = load_dataset("ayaan04/english-to-shakespeare")
 ```
 ds = load_dataset("harpreetsahota/modern-to-shakesperean-translation")
 ```
-4. [formal-casual](https://huggingface.co/datasets/Mehaki/formal_casual)
+4. [formal-casual](https://huggingface.co/datasets/Mehaki/formal_casual) - Trained
 ```
 ds = load_dataset("Mehaki/formal_casual")
 ```
-5. [Poetry-Modern_Resaissance](https://huggingface.co/datasets/merve/poetry)
+5. [Poetry-Modern_Resaissance](https://huggingface.co/datasets/merve/poetry) - Trained
 ```
 ds = load_dataset("merve/poetry")
 ```
