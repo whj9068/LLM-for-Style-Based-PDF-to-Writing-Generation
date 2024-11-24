@@ -124,10 +124,10 @@ Example 5:
 The Role of Artificial Intelligence in Healthcare Artificial Intelligence (AI) is revolutionizing the healthcare sector through improved diagnostics, predictive analytics, and personalized patient care. 
 
 Provided style characteristics (consider as supplementary):
-"Word_Length": "The text uses predominantly short, easy-to-understand words, keeping the tone light, approachable, and conversational, with occasional longer words for emphasis or variety.",
-"Syllabic_Word": "The text relies heavily on monosyllabic and disyllabic words to maintain simplicity and flow, with some polysyllabic words adding a touch of playfulness and charm.",
-"Emotion": "The emotional tone of the text is upbeat, friendly, and encouraging, designed to engage and motivate the reader while conveying a sense of ease and confidence.",
-"Rhetoric": "The text uses conversational language, rhetorical questions, and informal phrases like 'Hey there' and 'kick back' to create a relaxed and inclusive vibe. It avoids overly formal structures, opting instead for snappy, engaging sentences with a touch of humor and positivity."
+"Word_Length": "The text predominantly uses longer, more precise words to convey a formal and authoritative tone, while shorter words are used sparingly to ensure clarity and readability.",
+"Syllabic_Word": "The text leans towards polysyllabic words to articulate complex ideas and maintain an academic tone, with monosyllabic words used strategically for emphasis and brevity.",
+"Emotion": "The emotional tone of the text is neutral and professional, focusing on delivering factual information and logical reasoning rather than evoking strong emotional responses.",
+"Rhetoric": "The text employs formal language and structured sentences to maintain clarity and professionalism. It uses precise terminology, avoids colloquialisms, and incorporates logical transitions to build a cohesive and authoritative argument."
 
 
 --Modern to Modern Poetry
