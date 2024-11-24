@@ -1,0 +1,159 @@
+EOT Demo Prompts
+--Template
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+Today I realized I had a crush on Jorden and his older brother, Kaylen.
+
+Sample writing with desired writing style:
+Example 1:
+My love looks like a girl to-night, But she is old. The plaits that lie along her pillow Are not gold, But threaded with filigree silver, And uncanny cold. She looks like a young maiden, since her brow Is smooth and fair, Her cheeks are very smooth, her eyes are closed. She sleeps a rare Still winsome sleep, so still, and so composed. Nay, but she sleeps like a bride, and dreams her dreams Of perfect things. She lies at last, the darling, in the shape of her dream, And her dead mouth sings By its shape, like the thrushes in clear evenings.
+Example 2:
+
+Example 3:
+
+Example 4:
+
+Example 5:
+
+Provided style characteristics (consider as supplementary):
+
+
+
+--Modern to Shakespearean
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+I'm going to make you a rich man .
+
+Sample writing with desired writing style:
+Example 1:
+He's friends with Caesar , In state of health , thou say'st , and , thou say'st , free .
+Example 2:
+He's bound to Octavia .
+Example 3:
+For what good turn ?
+Example 4:
+For the best turn i' th' bed .
+Example 5:
+Let him not leave out The color of her hair .
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses a mix of word lengths, with a notable balance between shorter words (one or two syllables) and longer, multi-syllabic words. This variation contributes to both readability and a sophisticated tone.",
+"Syllabic_Word": "The text favors a blend of monosyllabic words for structural clarity and multi-syllabic words to convey technical depth and nuance. Polysyllabic terms enhance the formal tone and emphasize the complexity of ideas.",
+"Emotion": "The emotional tone of the text is nuanced and dynamic, often exploring a range of emotions from positive admiration to negative despair. This balance creates a depth of emotional engagement while maintaining a formal and reflective perspective.",
+"Rhetoric": "The text employs a variety of rhetorical devices, including figurative language, idioms, metaphors, and hyperbole. These techniques enrich the language, highlight emotional resonance, and add dramatic or humorous effects. The sentence structure integrates periodic sentences for dramatic buildup and looser sentences for spontaneity, ensuring an engaging and persuasive flow."
+
+
+--Shakespearean to Modern
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+Thou didst absolutely shine at the exhibition of talents!
+
+Sample writing with desired writing style:
+Example 1:
+I don't make fortunes ; I only see them .
+Example 2:
+Well , I can not tell how my difficult life has weathered my face , but I will never let those difficulties subdue my courage .
+Example 3:
+If our eyes were policemen , they might capture two thieves at once while we're embracing .
+Example 4:
+If I were to make a prediction regarding this union , I wouldn't say that .
+Example 5:
+This is how they do it , sir : they measure the depth of the Nile , according to certain marks made on the walls of the Pyramid .
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses predominantly shorter words (one or two syllables) to maintain simplicity and accessibility, with occasional longer words to add depth and variation.",
+"Syllabic_Word": "The text balances monosyllabic words for clarity and simplicity with polysyllabic words to evoke deeper meaning and emotional resonance, enhancing the relatable tone.",
+"Emotion": "The emotional tone of the text is warm and uplifting, focusing on positive emotions like joy, peace, and gratitude, while fostering a sense of connection and empathy.",
+"Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
+
+
+--Modern to Modern Poetry
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+When I woke up this morning, I feel like I am as free as a bird.
+
+Sample writing with desired writing style:
+Example 1:
+The motion of gathering loops of water Must either burst or remain in a moment. The violet colors through the glass Throw up little swellings that appear And spatter as soon as another strikes And is born; so pure are they of colored Hues, that we feel the absent strength Of its power. When they begin they gather Like sand on the beach: each bubble Contains a complete eye of water.
+Example 2:
+As the immense dew of Florida Brings forth The big-finned palm And green vine angering for life, As the immense dew of Florida Brings forth hymn and hymn From the beholder, Beholding all these green sides And gold sides of green sides, And blessed mornings, Meet for the eye of the young alligator, And lightning colors So, in me, come flinging Forms, flames, and the flakes of flames.
+Example 3:
+Only the wanderer Knows England's graces, Or can anew see clear Familiar faces. And who loves joy as he That dwells in shadows? Do not forget me quite, O Severn meadows.
+Example 4:
+Living, I had no might To make you hear, Now, in the inmost night, I am so near No whisper, falling light, Divides us, dear. Living, I had no claim On your great hours. Now the thin candle-flame, The closing flowers, Wed summer with my name, And these are ours. Your shadow on the dust, Strength, and a cry, Delight, despair, mistrust, All these am I. Dawn, and the far hills thrust To a far sky. Living, I had no skill To stay your tread, Now all that was my will Silence has said. We are one for good and ill Since I am dead.
+Example 5:
+A twitch, a twitter, an elastic shudder in flight And serrated wings against the sky, Like a glove, a black glove thrown up at the light, And falling back. Never swallows! Bats! The swallows are gone. At a wavering instant the swallows gave way to bats By the Ponte Vecchio ... Changing guard. Bats, and an uneasy creeping in one's scalp As the bats swoop overhead! Flying madly. Pipistrello! Black piper on an infinitesimal pipe.
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text uses a mix of short and long words, balancing simplicity for readability and complexity for artistic depth, depending on the tone and purpose of the poem.",
+"Syllabic_Word": "The text often alternates between monosyllabic words to create rhythm and immediacy, and polysyllabic words to convey intricate emotions or abstract ideas, enhancing its musicality and expressiveness.",
+"Emotion": "The emotional tone of the text is highly flexible, ranging from raw and intense to subtle and contemplative, reflecting the poet’s intent and the theme’s demands, often aiming to evoke strong feelings in the reader.",
+"Rhetoric": "The text frequently employs metaphors, similes, and other figurative language to explore universal themes such as love, nature, and mortality. It may use free verse for fluidity or structured forms for discipline, leveraging imagery and sound devices like alliteration and assonance to create a resonant experience."
+
+
+--Modern to Renaissance Poetry
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+
+
+Sample writing with desired writing style:
+Example 1:
+My love looks like a girl to-night, But she is old. The plaits that lie along her pillow Are not gold, But threaded with filigree silver, And uncanny cold. She looks like a young maiden, since her brow Is smooth and fair, Her cheeks are very smooth, her eyes are closed. She sleeps a rare Still winsome sleep, so still, and so composed. Nay, but she sleeps like a bride, and dreams her dreams Of perfect things. She lies at last, the darling, in the shape of her dream, And her dead mouth sings By its shape, like the thrushes in clear evenings.
+Example 2:
+
+Example 3:
+
+Example 4:
+
+Example 5:
+
+Provided style characteristics (consider as supplementary):
+"Word_Length": "The text frequently uses longer, ornate words alongside simpler terms, reflecting the Renaissance's celebration of linguistic artistry and intellectual sophistication.",
+"Syllabic_Word": "The text favors polysyllabic words for their melodic and expressive qualities, paired with monosyllabic words to anchor the rhythm and add clarity to complex ideas.",
+"Emotion": "The emotional tone of the text is elevated and refined, exploring themes of love, beauty, faith, and human aspiration with a blend of passion, introspection, and idealism.",
+"Rhetoric": "The text is rich in metaphors, allegory, and classical allusions, often invoking mythological and religious imagery. It adheres to structured poetic forms like sonnets, with iambic pentameter and rhyme schemes that reflect the balance and harmony valued in the period."
