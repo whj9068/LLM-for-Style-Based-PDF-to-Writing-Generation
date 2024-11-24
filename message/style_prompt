@@ -1,0 +1,54 @@
+白话
+Provided style characteristics (consider as supplementary):
+    "Word_Length": "The text uses predominantly shorter words (one or two syllables) to maintain simplicity and accessibility, with occasional longer words to add depth and variation.",
+    "Syllabic_Word": "The text balances monosyllabic words for clarity and simplicity with polysyllabic words to evoke deeper meaning and emotional resonance, enhancing the relatable tone.",
+    "Emotion": "The emotional tone of the text is warm and uplifting, focusing on positive emotions like joy, peace, and gratitude, while fostering a sense of connection and empathy.",
+    "Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
+
+shakespear
+style_descriptions = {
+    "Word_Length": "The text uses a mix of word lengths, with a notable balance between shorter words (one or two syllables) and longer, multi-syllabic words. This variation contributes to both readability and a sophisticated tone.",
+    "Syllabic_Word": "The text favors a blend of monosyllabic words for structural clarity and multi-syllabic words to convey technical depth and nuance. Polysyllabic terms enhance the formal tone and emphasize the complexity of ideas.",
+    "Emotion": "The emotional tone of the text is nuanced and dynamic, often exploring a range of emotions from positive admiration to negative despair. This balance creates a depth of emotional engagement while maintaining a formal and reflective perspective.",
+    "Rhetoric": "The text employs a variety of rhetorical devices, including figurative language, idioms, metaphors, and hyperbole. These techniques enrich the language, highlight emotional resonance, and add dramatic or humorous effects. The sentence structure integrates periodic sentences for dramatic buildup and looser sentences for spontaneity, ensuring an engaging and persuasive flow."
+}
+
+renaissance poetry
+style_descriptions = {
+    "Word_Length": "The text frequently uses longer, ornate words alongside simpler terms, reflecting the Renaissance's celebration of linguistic artistry and intellectual sophistication.",
+    "Syllabic_Word": "The text favors polysyllabic words for their melodic and expressive qualities, paired with monosyllabic words to anchor the rhythm and add clarity to complex ideas.",
+    "Emotion": "The emotional tone of the text is elevated and refined, exploring themes of love, beauty, faith, and human aspiration with a blend of passion, introspection, and idealism.",
+    "Rhetoric": "The text is rich in metaphors, allegory, and classical allusions, often invoking mythological and religious imagery. It adheres to structured poetic forms like sonnets, with iambic pentameter and rhyme schemes that reflect the balance and harmony valued in the period."
+}
+
+poetry in general
+style_descriptions = {
+    "Word_Length": "The text uses a mix of short and long words, balancing simplicity for readability and complexity for artistic depth, depending on the tone and purpose of the poem.",
+    "Syllabic_Word": "The text often alternates between monosyllabic words to create rhythm and immediacy, and polysyllabic words to convey intricate emotions or abstract ideas, enhancing its musicality and expressiveness.",
+    "Emotion": "The emotional tone of the text is highly flexible, ranging from raw and intense to subtle and contemplative, reflecting the poet’s intent and the theme’s demands, often aiming to evoke strong feelings in the reader.",
+    "Rhetoric": "The text frequently employs metaphors, similes, and other figurative language to explore universal themes such as love, nature, and mortality. It may use free verse for fluidity or structured forms for discipline, leveraging imagery and sound devices like alliteration and assonance to create a resonant experience."
+}
+
+novel in general
+style_descriptions = {
+    "Word_Length": "The text utilizes a mix of shorter words for readability and longer, more descriptive words to build vivid imagery and complex ideas, maintaining a balance between accessibility and depth.",
+    "Syllabic_Word": "The text often combines monosyllabic words for clarity and directness with polysyllabic words to add nuance, sophistication, and emotional weight, reflecting the narrative’s tone and style.",
+    "Emotion": "The emotional tone of the text is dynamic, shifting to align with the story's progression and characters' arcs, ranging from subtle and introspective to intense and dramatic, designed to immerse the reader in the narrative world.",
+    "Rhetoric": "The text employs detailed descriptions, metaphors, and dialogue to develop characters and settings. Narrative techniques like foreshadowing, flashbacks, and varying points of view are used to weave complexity into the story and engage the reader on multiple levels."
+}
+
+casual
+style_descriptions = {
+    "Word_Length": "The text uses predominantly short, easy-to-understand words, keeping the tone light, approachable, and conversational, with occasional longer words for emphasis or variety.",
+    "Syllabic_Word": "The text relies heavily on monosyllabic and disyllabic words to maintain simplicity and flow, with some polysyllabic words adding a touch of playfulness and charm.",
+    "Emotion": "The emotional tone of the text is upbeat, friendly, and encouraging, designed to engage and motivate the reader while conveying a sense of ease and confidence.",
+    "Rhetoric": "The text uses conversational language, rhetorical questions, and informal phrases like 'Hey there' and 'kick back' to create a relaxed and inclusive vibe. It avoids overly formal structures, opting instead for snappy, engaging sentences with a touch of humor and positivity."
+}
+
+formal
+style_descriptions = {
+    "Word_Length": "The text predominantly uses longer, more precise words to convey a formal and authoritative tone, while shorter words are used sparingly to ensure clarity and readability.",
+    "Syllabic_Word": "The text leans towards polysyllabic words to articulate complex ideas and maintain an academic tone, with monosyllabic words used strategically for emphasis and brevity.",
+    "Emotion": "The emotional tone of the text is neutral and professional, focusing on delivering factual information and logical reasoning rather than evoking strong emotional responses.",
+    "Rhetoric": "The text employs formal language and structured sentences to maintain clarity and professionalism. It uses precise terminology, avoids colloquialisms, and incorporates logical transitions to build a cohesive and authoritative argument."
+}

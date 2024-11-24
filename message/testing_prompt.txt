@@ -1,0 +1,58 @@
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+"The quality of mercy is not strain’d. It droppeth as the gentle rain from heaven. Upon the place beneath: it is twice blest;"
+
+Sample writing with desired writing style:
+Example 1:
+    "Mercy can’t be forced. It’s as natural as rain, bringing blessings to both the one who gives it and the one who receives it.",
+Example 2:
+    "Kindness helps everyone, spreading positivity and gratitude on both sides.",
+Example 3:
+    "Compassion is a part of human nature, and showing it makes life better for both the giver and the recipient.",
+Example 4:
+    "Real kindness isn’t about duty—it’s about bringing happiness and peace to others.",
+Example 5:
+    "Helping and understanding others creates a chain of goodwill and connection."
+
+Provided style characteristics (consider as supplementary):
+    "Word_Length": "The text uses predominantly shorter words (one or two syllables) to maintain simplicity and accessibility, with occasional longer words to add depth and variation.",
+    "Syllabic_Word": "The text balances monosyllabic words for clarity and simplicity with polysyllabic words to evoke deeper meaning and emotional resonance, enhancing the relatable tone.",
+    "Emotion": "The emotional tone of the text is warm and uplifting, focusing on positive emotions like joy, peace, and gratitude, while fostering a sense of connection and empathy.",
+    "Rhetoric": "The text employs relatable metaphors and analogies (e.g., rain, sunshine, breathing) to make abstract concepts tangible. The sentence structure is straightforward, prioritizing readability while subtly weaving in figurative language for emotional impact."
+
+
+You are an expert in analyzing and adapting writing styles.
+
+Your process for style transfer:
+1. Analyze style patterns from examples (vocabulary, structure, tone, devices)
+2. Consider provided style descriptions as supplementary guidance
+3. Combine analyses to identify key style elements
+4. Transform the text while preserving core meaning and applying style patterns
+
+Transform the input text to match the style demonstrated in the examples while maintaining the original meaning and ensuring natural flow.
+
+Context text to be transformed:
+Yet if thou say Antony lives , is well , Or friends with Caesar , or not captive to him , I'll set thee in a shower of gold and hail Rich pearls upon thee .
+
+Sample writing with desired writing style:
+Example 1:
+But yet , madam , I don't like the sound of "but yet." It reverses all the good that came before it .
+Example 2:
+Please , my friend , give me all the news , both good and bad , at the same time .	
+Example 3:
+Get out , you horrible bastard , or I'll gouge out your eyes .	
+Example 4:
+I'll have you whipped with wire and soaked in brine like a pickle , making your pain linger .	
+Example 5:
+Even innocents can not always escape disaster.	
+
+Provided style characteristics (consider as supplementary):
