@@ -161,12 +161,13 @@ Sample writing with desired writing style:
 Example 1:
 My love looks like a girl to-night, But she is old. The plaits that lie along her pillow Are not gold, But threaded with filigree silver, And uncanny cold. She looks like a young maiden, since her brow Is smooth and fair, Her cheeks are very smooth, her eyes are closed. She sleeps a rare Still winsome sleep, so still, and so composed. Nay, but she sleeps like a bride, and dreams her dreams Of perfect things. She lies at last, the darling, in the shape of her dream, And her dead mouth sings By its shape, like the thrushes in clear evenings.
 Example 2:
-
+That is a flode of hell; And from the great Pluto, The prynce of endles wo; And from foule Alecto, With vysage blacke and blo; And from Medusa, that mare, That lyke a fende doth stare; And from Megeras edders, For rufflynge of Phillips fethers, And from her fyry sparklynges, For burnynge of his wynges; And from the smokes sowre Of Proserpinas bowre; And from the dennes darke, Wher Cerberus doth barke, Whom Theseus dyd afraye, Whom Hercules dyd outraye, As famous poetes say;
 Example 3:
-
+Come darkest night, becoming sorrow best; Light; leave thy light; fitt for a lightsome soule; Darknes doth truly sure with mee oprest Whom absence power doth from mirthe controle: The very trees with hanging heads condole Sweet sommers parting, and of leaves distrest In dying coulers make a griefe-full role; Soe much (alas) to sorrow are they prest, Thus of dead leaves her farewell carpetts made: Theyr fall, theyr branches, all theyr mournings prove; With leavles, naked bodies, whose huese vade From hopefull greene, to wither in theyr love, If trees, and leaves for absence, mourners bee Noe mervaile that I grieve, who like want see.
 Example 4:
-
+Gut eats all day and lechers all the night; So all his meat he tasteth over twice; And, striving so to double his delight, He makes himself a thoroughfare of vice. Thus in his belly can he change a sin: Lust it comes out, that gluttony went in.
 Example 5:
+From fairest creatures we desire increase, That thereby beautys rose might never die, But as the riper should by time decease, His tender heir might bear his memory; But thou, contracted to thine own bright eyes, Feedst thy lights flame with self-substantial fuel, Making a famine where abundance lies, Thyself thy foe, to thy sweet self too cruel. Though that art now the worlds fresh ornament And only herald to the gaudy spring, Within thine own bud buriest thy content, And, tender churl, makst waste in niggarding. Pity the world, or else this glutton be, To eat the worlds due, by the grave and thee.
 
 Provided style characteristics (consider as supplementary):
 "Word_Length": "The text frequently uses longer, ornate words alongside simpler terms, reflecting the Renaissance's celebration of linguistic artistry and intellectual sophistication.",
