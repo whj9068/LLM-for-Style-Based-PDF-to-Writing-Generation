@@ -5,7 +5,7 @@ Context text to be transformed:
 
 Sample writing with desired writing style:
 Example 1:
-My love looks like a girl to-night, But she is old. The plaits that lie along her pillow Are not gold, But threaded with filigree silver, And uncanny cold. She looks like a young maiden, since her brow Is smooth and fair, Her cheeks are very smooth, her eyes are closed. She sleeps a rare Still winsome sleep, so still, and so composed. Nay, but she sleeps like a bride, and dreams her dreams Of perfect things. She lies at last, the darling, in the shape of her dream, And her dead mouth sings By its shape, like the thrushes in clear evenings.
+
 Example 2:
 
 Example 3:
@@ -15,6 +15,10 @@ Example 4:
 Example 5:
 
 Provided style characteristics (consider as supplementary):
+- Word_Length: [description]
+- Syllabic_Word: [description]
+- Emotion: [description]
+- Rhetoric: [description]
 
 --Shakespearean to Modern
 Context text to be transformed:
