@@ -5,14 +5,15 @@ Context text to be transformed:
 
 Sample writing with desired writing style:
 Example 1:
-
+[Style example 1]
 Example 2:
-
+[Style example 2]
 Example 3:
-
+[Style example 3]
 Example 4:
-
+[Style example 4]
 Example 5:
+[Style example 5]
 
 Provided style characteristics (consider as supplementary):
 - Word_Length: [description]
