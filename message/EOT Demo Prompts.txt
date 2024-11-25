@@ -1,7 +1,7 @@
 EOT Demo Prompts
 --Template
 Context text to be transformed:
-Today I realized I had a crush on Jorden and his older brother, Kaylen.
+"[Your input text]"
 
 Sample writing with desired writing style:
 Example 1:
